@@ -18,9 +18,8 @@
 		"zombie": "^5.0.5"
 	},
 	 "engines" : { 
-    "node" : ">=8.0.0 <11.0.0" 
-  },
-
+    		"node": "12.x"
+  	},
 	"repository": {
 		"type": "git",
 		"url": "https://hyperdev.com/#!/project/welcome-project"
