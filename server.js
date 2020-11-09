@@ -45,8 +45,14 @@ app.use(function(req, res, next) {
     .send('Not Found');
 });
 
+
+var server = app.listen(process.env.PORT || 5000, function () {
+  var port = server.address().port;
+  console.log("Express is working on port " + port);
+});
+
 //Start our server and tests!
-app.listen(process.env.PORT || 3000, function () {
+/*app.listen(process.env.PORT || 3000, function () {
   console.log("Listening on port " + process.env.PORT);
   if(process.env.NODE_ENV==='test') {
     console.log('Running Tests...');
@@ -60,6 +66,6 @@ app.listen(process.env.PORT || 3000, function () {
       }
     }, 3500);
   }
-});
+});*/
 
 module.exports = app; //for testing
